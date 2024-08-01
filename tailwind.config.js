@@ -27,7 +27,8 @@ module.exports = {
         'yayla-white':'#CACFD2',
       },
       spacing:{
-        '128':'38.5rem'
+        '128':'38.5rem',
+        '140':'50rem'
       },
 
       

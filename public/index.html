@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="tr">
 
 <head>
   <meta charset="UTF-8">
@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--CSS-->
   <link href="./css/styles.css" rel="stylesheet">
 
 </head>
@@ -27,31 +29,52 @@
 <body class=" font-oswald">
 
   <!--Header section-->
-  <header class="bg-gega-white text-black uppercase py-8 font-bold">
+  <header class="bg-gega-white text-black uppercase py-5 md:py-8 font-bold">
 
-    <div class="container flex justify-between items-center space-x-16">
-      <!--My icon-->
-      <i class="fa-solid fa-utensils fa-2xl pl-10 "></i>
-      <div class="text-start">Yayla yemek evi</div>
+    <div class="container flex justify-between items-center space-x-6 md:space-x-16">
+      
+        <!--My icon-->
+        <i class="fa-solid fa-utensils fa-2xl pl-10 "></i>
+        <div class="text-start text-nowrap">Yayla yemek evi</div>
+
+      
+      <!--Mobile navbar-->
+      <div id="menu-toggle" class="block md:hidden pr-4">
+        <div class="space-y-1 cursor-pointer ">
+          <div class="bg-black w-8 h-1 rounded-full"> </div>
+          <div class="bg-black w-8 h-1 rounded-full"> </div>
+          <div class="bg-black w-8 h-1 rounded-full"> </div>
+          
+        </div>
+      </div>
+
+
       <!--Navigation bar-->
-      <nav class="flex justify-center space-x-12 flex-1 text-yellow-900">
+      <nav class="hidden md:flex justify-center space-x-12 flex-1 text-yellow-900">
         <a href="#konum">Konum</a>
         <a href="#menu">Menü</a>
         <a href="#Hakkımızda">Hakkımızda</a>
         <a href="#Hakkımızda">İletİşİm</a>
       </nav>
       <!--Contact icons-->
-      <div class="flex space-x-8 items-center pr-8">
+      <div class="hidden md:flex space-x-8 items-center pr-8">
         <a href="https://www.instagram.com/yaylayemekevi/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i> </a>
         <a href="https://www.facebook.com/profile.php?id=100063710611861" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
         <a href="https://api.whatsapp.com/send?phone=%2B905338471010&app=facebook&entry_point=page_cta" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
       </div>
     </div>
-
+    
+    <!--Mobile menu-->
+    <nav id="mobile-menu" class="hidden md:hidden pt-7">
+      <a href="#konum" class="block px-4 py-2 hover:bg-gray-200">Konum</a>
+      <a href="#menu" class="block px-4 py-2 hover:bg-gray-200">Menü</a>
+      <a href="#Hakkımızda" class="block px-4 py-2 hover:bg-gray-200">Hakkımızda</a>
+      <a href="#Hakkımızda" class="block px-4 py-2 hover:bg-gray-200">İletişim</a>
+    </nav>
   </header>
   <!--Hero section-->
   <section class="h-128 group relative">
-    <img src="/Yaylayemekevi/public/images/herosection1.png" alt="Hero section1" class="w-full h-full object-fill">
+    <img src="/Yaylayemekevi/public/images/herosection1.png" alt="Hero section1" class="w-full h-full object-cover md:object-fill">
 
     <!--Hero content-->
 
@@ -60,7 +83,7 @@
   <section class="bg-yayla-white flex" id="menu">
     <div class="container space-x-3 flex flex-col md:flex-row justify-center py-10 items-center w-full px-10">
       <!--İmages section-->
-      <div class="relative flex-1 flex justify-center mb-4 md:mb-0 group">
+      <div class="pl-3 relative flex-1 flex justify-center mb-4 md:mb-0 group">
         <!--image-->
         <a href="#"><img class="h-64 transition-transform duration-300 ease-in-out transform group-hover:blur-sm" src="/Yaylayemekevi/public/images/breakfast1500.png" alt="image error"> </a>
         <!--Blurred text part -->
@@ -95,85 +118,92 @@
     </div>
   </section>
   
-  <!--About section-->
-  <section class="bg-yayla-white flex h-screen" id="Hakkımızda">
-    <!--About secion image-->
-    <div class="container flex basis-1/2"><img src="/Yaylayemekevi/public/images/aboutsection.png" alt=""></div>
-    <!--about section text-->
-    <div class="container flex basis-1/2 bg-white items-center justify-center bg-cover font-chrimson" style="background-image: url(/Yaylayemekevi/public/images/textbg1.png);"> 
-      <div class="flex flex-col text-center space-y-4 p-6"> 
-       <!-- <div class="text-4xl font-bold">Hakkımızda</div>-->
-        <div class="text-4xl text-black font-oswald">Yayla yemek evi</div>
-        <hr class="border-yellow-800 w-full my-4">
-        <div class="text-4xl pl-4 font-bold">Çalışma saatlerimiz</div>
-        <!--Çalışma saatleri-->
-        <ul class="list-none space-y-2 whitespace-nowrap text-2xl">
-          <li class="flex justify-center">
-            <span class="w-1/3 text-right">Pazartesi</span>
-            <span class="px-5"> - </span>
-            <span class="w-1/3 text-left">20:00-00:00</span>
-          </li>
-          <li class="flex justify-center">
-            <span class="w-1/3 text-right">Salı</span>
-            <span class="px-5"> - </span>
-            <span class="w-1/3 text-left">08:00-00:00</span>
-          </li>
-          <li class="flex justify-center">
-            <span class="w-1/3 text-right">Çarşamba</span>
-            <span class="px-5"> - </span>
-            <span class="w-1/3 text-left">08:00-00:00</span>
-          </li>
-          <li class="flex justify-center">
-            <span class="w-1/3 text-right">Perşembe</span>
-            <span class="px-5"> - </span>
-            <span class="w-1/3 text-left">08:00-00:00</span>
-          </li>
-          <li class="flex justify-center">
-            <span class="w-1/3 text-right">Cuma</span>
-            <span class="px-5"> - </span>
-            <span class="w-1/3 text-left">08:00-00:00</span>
-          </li>
-          <li class="flex justify-center">
-            <span class="w-1/3 text-right">Cumartesi</span>
-            <span class="px-5"> - </span>
-            <span class="w-1/3 text-left">08:00-00:00</span>
-          </li>
-          <li class="flex justify-center">
-            <span class="w-1/3 text-right">Pazar</span>
-            <span class="px-5"> - </span>
-            <span class="w-1/3 text-left">08:00-00:00</span>
-          </li>
-        </ul>
-        <div class="pt-16 font-bold text-2xl">İletişim</div>
-        <hr class="border-yellow-800 w-full">
-        <!--icons-->
-        <div class="flex justify-between ">
-          <a href="https://www.instagram.com/yaylayemekevi/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i> </a>
-          <a href="#" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
-          
-        </div>
-        <div class="text-start text-lg font-bold font-oswald"> <i class="fa-solid fa-phone fa-2xl pr-10"> </i> 0533 847 1010</div>
-      </div>
+  <section class="bg-yayla-white flex flex-col md:flex-row h-auto md:h-screen" id="Hakkımızda">
+    <!--About section image-->
+    <div class="flex basis-full md:basis-1/2">
+        <img class="object-cover w-full h-full" src="/Yaylayemekevi/public/images/aboutsection.png" alt="">
     </div>
+    <!--about section text-->
+    <div class="flex basis-full md:basis-1/2 bg-white items-center justify-center bg-cover font-chrimson" style="background-image: url(/Yaylayemekevi/public/images/kırıkbeyaz.png);">
+        <div class="flex flex-col text-center space-y-4 p-6">
+            <!-- <div class="text-4xl font-bold">Hakkımızda</div>-->
+            <div class="text-4xl text-black font-oswald">Yayla yemek evi</div>
+            <hr class="border-yellow-800 w-full my-4">
+            <div class="text-4xl pl-4 font-bold">Çalışma saatlerimiz</div>
+            <!--Çalışma saatleri-->
+            <ul class="list-none space-y-2 whitespace-nowrap text-2xl">
+                <li class="flex justify-center">
+                    <span class="w-1/3 text-right">Pazartesi</span>
+                    <span class="px-5"> - </span>
+                    <span class="w-1/3 text-left">20:00-00:00</span>
+                </li>
+                <li class="flex justify-center">
+                    <span class="w-1/3 text-right">Salı</span>
+                    <span class="px-5"> - </span>
+                    <span class="w-1/3 text-left">08:00-00:00</span>
+                </li>
+                <li class="flex justify-center">
+                    <span class="w-1/3 text-right">Çarşamba</span>
+                    <span class="px-5"> - </span>
+                    <span class="w-1/3 text-left">08:00-00:00</span>
+                </li>
+                <li class="flex justify-center">
+                    <span class="w-1/3 text-right">Perşembe</span>
+                    <span class="px-5"> - </span>
+                    <span class="w-1/3 text-left">08:00-00:00</span>
+                </li>
+                <li class="flex justify-center">
+                    <span class="w-1/3 text-right">Cuma</span>
+                    <span class="px-5"> - </span>
+                    <span class="w-1/3 text-left">08:00-00:00</span>
+                </li>
+                <li class="flex justify-center">
+                    <span class="w-1/3 text-right">Cumartesi</span>
+                    <span class="px-5"> - </span>
+                    <span class="w-1/3 text-left">08:00-00:00</span>
+                </li>
+                <li class="flex justify-center">
+                    <span class="w-1/3 text-right">Pazar</span>
+                    <span class="px-5"> - </span>
+                    <span class="w-1/3 text-left">08:00-00:00</span>
+                </li>
+            </ul>
+            <div class="pt-16 font-bold text-2xl">İletişim</div>
+            <hr class="border-yellow-800 w-full">
+            <!--icons-->
+            <div class="flex justify-between ">
+                <a href="https://www.instagram.com/yaylayemekevi/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i> </a>
+                <a href="https://www.facebook.com/profile.php?id=100063710611861" target="_blank"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=%2B905338471010&app=facebook&entry_point=page_cta" target="_blank"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+            </div>
+            <div class="text-start text-lg font-bold font-oswald pl-9"><i class="fa-solid fa-phone fa-2xl pr-10"></i> 0533 847 1010</div>
+        </div>
+    </div>
+</section>
 
 
 
-  </section>
+  
 
 <!--Google reviews section-->
 <section class="flex flex-col h-96" > 
 <div class='sk-ww-google-reviews h-80 pt-5' data-embed-id='25442578'></div><script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
 </section>
-
+<!--Google maps location-->
 <section class="flex items-center justify-center bg-no-repeat bg-cover h-128" style="background-image: url(/Yaylayemekevi/public/images/reviews1.png);">
   
   <div class="flex" id="konum"> 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4599.4581499609685!2d34.07644827451538!3d35.39761424973221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14dfa0afed780c2f%3A0x2eb95722503ce949!2sYayla%20Yemek%20Evi!5e0!3m2!1str!2s!4v1722105022667!5m2!1str!2s" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe class="py-10 px-56 md:p-7" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4599.4581499609685!2d34.07644827451538!3d35.39761424973221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14dfa0afed780c2f%3A0x2eb95722503ce949!2sYayla%20Yemek%20Evi!5e0!3m2!1str!2s!4v1722105022667!5m2!1str!2s" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
    </div>
  
 </section>
 
+
+
+
+
+
+<script src="./js/main.js" charset="UTF-8"></script>
 </body>
 
 </html>
