@@ -35,7 +35,9 @@
       
         <!--My icon-->
         <i class="fa-solid fa-utensils fa-2xl pl-10 "></i>
-        <div class="text-start text-nowrap">Yayla yemek evi</div>
+        <div class="text-start text-nowrap">
+          <a href="index.html">Yayla yemek evi</a>
+        </div>
 
       
       <!--Mobile navbar-->
@@ -52,7 +54,7 @@
       <!--Navigation bar-->
       <nav class="hidden md:flex justify-center space-x-12 flex-1 text-yellow-900">
         <a href="#konum">Konum</a>
-        <a href="#menu">Menü</a>
+        <a href="menu.html">Menü</a>
         <a href="#Hakkımızda">Hakkımızda</a>
         <a href="#Hakkımızda">İletİşİm</a>
       </nav>
@@ -65,7 +67,7 @@
     </div>
     
     <!--Mobile menu-->
-    <nav id="mobile-menu" class="hidden md:hidden pt-7">
+    <nav id="mobile-menu" class="hidden md:hidden pt-7 text-center text-l">
       <a href="#konum" class="block px-4 py-2 hover:bg-gray-200">Konum</a>
       <a href="#menu" class="block px-4 py-2 hover:bg-gray-200">Menü</a>
       <a href="#Hakkımızda" class="block px-4 py-2 hover:bg-gray-200">Hakkımızda</a>
@@ -80,44 +82,50 @@
 
   </section>
   <!--Food section-->
-  <section class="bg-yayla-white flex" id="menu">
+  <section class="bg-yayla-white flex-row" id="menu">
     <div class="container space-x-3 flex flex-col md:flex-row justify-center py-10 items-center w-full px-10">
       <!--İmages section-->
-      <div class="pl-3 relative flex-1 flex justify-center mb-4 md:mb-0 group">
+      <div id="kahvaltı" class="pl-3 relative flex-1 flex justify-center mb-4 md:mb-0 group">
         <!--image-->
-        <a href="#"><img class="h-64 transition-transform duration-300 ease-in-out transform group-hover:blur-sm" src="/Yaylayemekevi/public/images/breakfast1500.png" alt="image error"> </a>
+        <a href="menu.html"><img class="h-64 transition-transform duration-300 ease-in-out transform group-hover:blur-sm" src="/Yaylayemekevi/public/images/breakfast1500.png" alt="image error"> </a>
         <!--Blurred text part -->
         <div class="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <p class="text-lg font-bold">Kahvaltımız</p>
         </div>
       </div>
-      <div class="relative flex-1 flex justify-center mb-4 md:mb-0 group">
+      <div id="ızgara" class="relative flex-1 flex justify-center mb-4 md:mb-0 group">
          <!--image-->
-        <a href="#"><img class="h-64 transition-transform duration-300 ease-in-out transform group-hover:blur-sm" src="/Yaylayemekevi/public/images/food1 500.png" alt="image error"> </a>
+        <a href="menu.html"><img class="h-64 transition-transform duration-300 ease-in-out transform group-hover:blur-sm" src="/Yaylayemekevi/public/images/food1 500.png" alt="image error"> </a>
         <!--Blurred text part -->
         <div class="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <p class="text-lg font-bold">Izgaralarımız</p>
         </div>
       </div>
-      <div class="relative flex-1 flex justify-center mb-4 md:mb-0 group">
+      <div id="corba" class="relative flex-1 flex justify-center mb-4 md:mb-0 group">
          <!--image-->
-        <a href="#"><img class="h-64 transition-transform duration-300 ease-in-out transform group-hover:blur-sm" src="/Yaylayemekevi/public/images/soup 500.png" alt="image error"> </a>
+        <a href="menu.html"><img class="h-64 transition-transform duration-300 ease-in-out transform group-hover:blur-sm" src="/Yaylayemekevi/public/images/soup 500.png" alt="image error"> </a>
         <!--Blurred text part -->
         <div class="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <p class="text-lg font-bold">Çorbalarımız</p>
         </div>
       </div>
-      <div class="relative flex-1 flex justify-center mb-4 md:mb-0 group">
+      <div id="icecek" class="relative flex-1 flex justify-center mb-4 md:mb-0 group">
          <!--image-->
-        <a href="#"><img class="h-64 transition-transform duration-300 ease-in-out transform group-hover:blur-sm" src="/Yaylayemekevi/public/images/tea 500.png" alt="image error"> </a>
+        <a href="menu.html"><img class="h-64 transition-transform duration-300 ease-in-out transform group-hover:blur-sm" src="/Yaylayemekevi/public/images/tea 500.png" alt="image error"> </a>
         <!--Blurred text part -->
         <div class="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <p class="text-lg font-bold">İçeceklerimiz</p>
         </div>
       </div>
     </div>
+
+
+
   </section>
   
+
+
+
   <section class="bg-yayla-white flex flex-col md:flex-row h-auto md:h-screen" id="Hakkımızda">
     <!--About section image-->
     <div class="flex basis-full md:basis-1/2">
