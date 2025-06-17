@@ -24,10 +24,6 @@ const Hero = () => {
           Pamuklu Köyü'nde doğanın içinde, Doğal lezzetler ve serpme köy kahvaltısı sizi bekliyor.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
-          <div className="flex items-center gap-2 bg-black/40 px-3 py-1 rounded text-white drop-shadow-sm">
-            <MapPin className="w-5 h-5" />
-            <span className="text-sm sm:text-base">Pamuklu Köyü, İskele</span>
-          </div>
           <a 
             href="tel:+905338471010" 
             className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
