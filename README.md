@@ -89,15 +89,7 @@ Web sitesi tüm cihaz boyutları için optimize edilmiştir:
 - ✅ Mobile-first yaklaşım
 - ✅ Optimize edilmiş görseller
 
-## 🤝 Katkıda Bulunma
-
-Katkılarınızı bekliyoruz! Lütfen aşağıdaki adımları izleyin:
-
-1. Projeyi fork edin
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'feat: Add amazing feature'`)
-4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
-5. Pull Request oluşturun
+Katkılarınızı bekliyoruz! 🤝
 
 ## 📄 Lisans
 
